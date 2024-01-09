@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.header a {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.playerTableAll:nth-child(1) {
+  background: rgb(81, 70, 2);
+}
+
+.playerTableAll:nth-child(2) {
+  background: rgb(71, 71, 70);
+}
+
+.playerTableAll:nth-child(3) {
+  background: rgb(71, 43, 2);
+}
