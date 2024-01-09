@@ -35,12 +35,12 @@ console.log(API_KEY)
 const playerPUUIDS = [
     "zJuF3yiP87YPy2EsMFjJl7rLia-Q2ymDOiKuTMAkH6jrOmUrIB5VIvWNR3UE43Dw_DNOr-B5tCXR0Q",
     "MgBnrMdEFOTEivbfrLg51LjSfr4iMFgYSm5Z3trSFgHjZ_fTZfNg6ER-YzLK7axzOIBuU4OntmP_UA",
-    // "UmNPiOLUtEwky8E_7mxCP2qBcA5rLHX6boEU_kkFdZ8FJqfmyyR2GFYwuePNPYDajkC8ZJH8qfurEA",
-    // "3Pzn-WQi6F6cG4_fdMsOsNWV0jzDWT_W_LMTgLK-CdYdLfpF17LOchd5TH5gXMd2AlvPDkcWP73nGg",
-    // "loW2q30OfRUv-muUEVlFPSPa1LftY1tl0mszazIAyE8vY5SODsv-WjXZ2935pOxPsqMvmbzhDmDmYg",
-    // "TTR2eiFjHMm5KIoNDhjVUtdgJCGKuhnzYrQDz4lhkNuYRDcXY-RIRFI6Ttlp01HRq5U7ZV0qnA2O5w",
-    // "A7xBTdXuGz3gaUKACMV5B3gaz7-u10AvPYjowSwOohObfKoQiSW4MEKdS3Jk-9os6ZkPwerSijL0qw",
-    // "cT5kTSM0LicivZRZNyarS8HvFdnnsYqcL6CJIH0joTtuDPriQf50CTfU0SBpacRa8ZRnCOsRr2471Q"
+    "UmNPiOLUtEwky8E_7mxCP2qBcA5rLHX6boEU_kkFdZ8FJqfmyyR2GFYwuePNPYDajkC8ZJH8qfurEA",
+    "3Pzn-WQi6F6cG4_fdMsOsNWV0jzDWT_W_LMTgLK-CdYdLfpF17LOchd5TH5gXMd2AlvPDkcWP73nGg",
+    "loW2q30OfRUv-muUEVlFPSPa1LftY1tl0mszazIAyE8vY5SODsv-WjXZ2935pOxPsqMvmbzhDmDmYg",
+    "TTR2eiFjHMm5KIoNDhjVUtdgJCGKuhnzYrQDz4lhkNuYRDcXY-RIRFI6Ttlp01HRq5U7ZV0qnA2O5w",
+    "A7xBTdXuGz3gaUKACMV5B3gaz7-u10AvPYjowSwOohObfKoQiSW4MEKdS3Jk-9os6ZkPwerSijL0qw",
+    "cT5kTSM0LicivZRZNyarS8HvFdnnsYqcL6CJIH0joTtuDPriQf50CTfU0SBpacRa8ZRnCOsRr2471Q"
 ]
 
 const playerNames = [
