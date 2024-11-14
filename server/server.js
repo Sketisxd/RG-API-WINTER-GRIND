@@ -17,7 +17,6 @@ app.use(cors())
 
 
 const API_KEY = process.env.API_KEY;
-console.log(API_KEY)
 // local api key puuids( puuid changes based on the api key.)
 // const playerPUUIDS =
 //     [
@@ -40,18 +39,20 @@ const playerPUUIDS = [
     "loW2q30OfRUv-muUEVlFPSPa1LftY1tl0mszazIAyE8vY5SODsv-WjXZ2935pOxPsqMvmbzhDmDmYg",
     "TTR2eiFjHMm5KIoNDhjVUtdgJCGKuhnzYrQDz4lhkNuYRDcXY-RIRFI6Ttlp01HRq5U7ZV0qnA2O5w",
     "A7xBTdXuGz3gaUKACMV5B3gaz7-u10AvPYjowSwOohObfKoQiSW4MEKdS3Jk-9os6ZkPwerSijL0qw",
-    "cT5kTSM0LicivZRZNyarS8HvFdnnsYqcL6CJIH0joTtuDPriQf50CTfU0SBpacRa8ZRnCOsRr2471Q"
+    "ghzWVDpIH5Tu20C2LsEn1wIH6HMjw0wRS0AMT48oCgKG4d5RufGLa5TTBhoyTr5DUdRs6qjbkX1URg"
 ]
 
 const playerNames = [
-    'Sketis/2001',
-    'Requiem/Osrs',
-    'Magas/1234',
-    'Jungleris/12345',
-    'Quartiz/EUW',
-    'Luxol/EUW',
-    'Protagonistas/adc',
-    'Leikerr/EUW'
+    'test',
+    'Sketis',
+    'Requiem',
+    'Magas',
+    'Jungleris',
+    'Quartiz',
+    'Luxol',
+    'Protagonistas',
+    'Not Responding',
+    'Not Responding'
 ]
 
 
@@ -189,6 +190,7 @@ app.get('/api/getrankinfo', async (req, res) => {
                         if (playerAllRanks[j].queueType == "RANKED_SOLO_5x5") {
                             playerAllRanks[j]['profileIcon'] = player[i].profileIcon;
                             playerAllRanks[j]['puuid'] = player[i].puuid;
+                            playerAllRanks[j]['summonerName'] = playerNames[i]
                             rankedSoloFiltered.push(playerAllRanks[j])
                         }
                     }
