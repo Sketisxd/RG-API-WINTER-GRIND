@@ -7,8 +7,8 @@ app.use(cors())
 const API_KEY = process.env.API_KEY;
 
 const playerPUUIDS = [
-    "N2xOnAa7xO0HoLJfJEknJhxmi13egN44jic-zAmBgt6OsZyFhEMvniAYyDPCESN4yoOS4ZCyxD6UZQ",
-    "46tIpTAPcb7vHU_GlOlLTFDGdJzsOZXI-qnnfl92qQKoU5Kl_4-Suo4BD5JB3I9pyrnDcAxOvp2bxQ"
+    "zJuF3yiP87YPy2EsMFjJl7rLia-Q2ymDOiKuTMAkH6jrOmUrIB5VIvWNR3UE43Dw_DNOr-B5tCXR0Q",
+    "MgBnrMdEFOTEivbfrLg51LjSfr4iMFgYSm5Z3trSFgHjZ_fTZfNg6ER-YzLK7axzOIBuU4OntmP_UA"
 ]
 
 app.get('/api/player-data', async (req, res) => {
