@@ -15,7 +15,7 @@ export const Home = () => {
 
 
     useEffect(() => {
-        axios.get("https://riotgamesapi-stats.onrender.com/api/getrankinfo")
+        axios.get("https://riotgamesapi-stats.onrender.com/api/player-data")
             .then(function (response) {
                 setBackendData(response.data)
                 setLoading(false)
