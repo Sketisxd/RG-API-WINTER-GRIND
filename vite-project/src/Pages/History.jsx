@@ -12,7 +12,7 @@ export const History = () => {
 
 
   React.useEffect(() => {
-    axios.get('https://riotgamesapi-stats.onrender.com/api/getmatchlist', { params: { username: params.id } })
+    axios.get('https://riot-games-api-server-data.vercel.app/api/getmatchlist', { params: { username: params.id } })
       .then(function (response) {
         setMatchesList(response.data)
         setLoading(false)

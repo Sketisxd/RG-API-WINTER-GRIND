@@ -43,7 +43,7 @@ function winRate(wins, losses) {
         return (
             <div className=" playerTableAll text-sm ">
             
-
+                    <Link to={`/History/${player.name}/${player.puuid}`} key={player.name}>
                     <div className="playerTableElement flex gap-4 border border-black p-2 cursor-pointer ">
                         <div className="imgInfo flex gap-1">
                             <p>{index + 1}.</p>
@@ -53,7 +53,8 @@ function winRate(wins, losses) {
                         <div className="flex flex-col">
                             <h3>{player.name}</h3>
                             <p>{league.tier} {league.rank} {league.leaguePoints} LP  </p>
-                            {/* <p className="text-xs mt-5">View match history</p> */}
+                            <p className="text-xs mt-5">View match history</p>
+                           
                         </div>
 
                         <div className="winrateInfo flex gap-1 ml-auto">
@@ -62,6 +63,7 @@ function winRate(wins, losses) {
                             <p className={winRate(league.wins, league.losses)>=50 ? 'text-green-300' : 'text-red-600'}>{winRate(league.wins, league.losses)} %</p>
                         </div>
                     </div>
+                    </Link>
             </div>
         )
     })

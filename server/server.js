@@ -17,8 +17,6 @@ const players = [
   { puuid: "ghzWVDpIH5Tu20C2LsEn1wIH6HMjw0wRS0AMT48oCgKG4d5RufGLa5TTBhoyTr5DUdRs6qjbkX1URg", name: "Not Responding" }
 ];
 
-
-
 app.get('/api/player-data', async (req, res) => {
     try {
         const allData = await Promise.all(
@@ -49,6 +47,32 @@ app.get('/api/player-data', async (req, res) => {
         res.status(500).json({ error: "Something went wrong" });
     }
 });
+
+
+app.get('/api/getmatchlist', async (req, res) => {
+
+    let puuid = req.query.username
+    let allMatchesDetails = []
+
+   
+        playerMatchList = await axios.get(`https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?queue=420&type=ranked&start=0&count=10&api_key=${API_KEY}`)
+            .then(response => response.data)
+            .catch(err => err)
+
+
+    let playerData
+        for (let i = 0; i < playerMatchList.length; i++) {
+            matchInfo = await axios.get(`https://europe.api.riotgames.com/lol/match/v5/matches/${playerMatchList[i]}?api_key=${API_KEY}`)
+                .then(response => response.data)
+                .catch(err => err)
+
+            let index = matchInfo.metadata.participants.findIndex(x => x == puuid)
+            playerData = matchInfo.info.participants[index]
+            playerData['gameDate'] = matchInfo.info.gameCreation
+            allMatchesDetails.push(playerData)
+        }
+        res.json(allMatchesDetails)
+})
 
 app.listen(3000, function () {
     console.log("Server started on port 3000")
