@@ -12,7 +12,7 @@ export const Home = () => {
 
 
     useEffect(() => {
-        axios.get("/api/player-data")
+        axios.get("https://riot-games-api-server-data.vercel.app/api/player-data")
             .then(function (response) {
                 setPlayerData(response.data)
                 setLoading(false)
