@@ -14,7 +14,7 @@ const players = [
   { puuid: "UmNPiOLUtEwky8E_7mxCP2qBcA5rLHX6boEU_kkFdZ8FJqfmyyR2GFYwuePNPYDajkC8ZJH8qfurEA", name: "Magas" },
   { puuid: "loW2q30OfRUv-muUEVlFPSPa1LftY1tl0mszazIAyE8vY5SODsv-WjXZ2935pOxPsqMvmbzhDmDmYg", name: "Luxol" },
   { puuid: "TTR2eiFjHMm5KIoNDhjVUtdgJCGKuhnzYrQDz4lhkNuYRDcXY-RIRFI6Ttlp01HRq5U7ZV0qnA2O5w", name: "Protagonistas" },
-  { puuid: "A7xBTdXuGz3gaUKACMV5B3gaz7-u10AvPYjowSwOohObfKoQiSW4MEKdS3Jk-9os6ZkPwerSijL0qw", name: "Not Responding" },
+  { puuid: "ghzWVDpIH5Tu20C2LsEn1wIH6HMjw0wRS0AMT48oCgKG4d5RufGLa5TTBhoyTr5DUdRs6qjbkX1URg", name: "Not Responding" }
 ];
 
 
