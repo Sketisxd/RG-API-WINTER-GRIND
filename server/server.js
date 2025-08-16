@@ -203,8 +203,6 @@ app.get('/api/getrankinfo', async (req, res) => {
     }
 })
 
-// app.listen(3000, function () {
-//     console.log("Server started on port 3000")
-// }) 
-// Export the app instead of listening
-export default app;
+app.listen(3000, function () {
+    console.log("Server started on port 3000")
+}) 
