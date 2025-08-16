@@ -170,7 +170,7 @@ app.get('/api/getrankinfo', async (req, res) => {
 
             if (player[i].id != undefined) {
 
-                playerAllRanks = await axios.get(`https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/${player[i].id}?api_key=${API_KEY}`)
+                playerAllRanks = await axios.get(`https://euw1.api.riotgames.com/lol/league/v4/entries/by-puuid/${player[i].id}?api_key=${API_KEY}`)
                     .then(response => response.data)
                     .catch(error => {
 
