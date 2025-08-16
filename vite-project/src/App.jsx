@@ -10,7 +10,7 @@ export default function App() {
       <BrowserRouter>
       <nav className="header">
           
-          <Link to="/"><h1> 2024 M. LEAGUE OF LEGENDS RANKED SOLO GRIND</h1></Link>
+          <Link to="/"><h1> 2025 M. LEAGUE OF LEGENDS RANKED SOLO GRIND</h1></Link>
       </nav>
 
         <Routes>
